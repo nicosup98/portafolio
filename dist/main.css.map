@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://portafolio/./src/styles/index.css"],"names":[],"mappings":"AAAA;IACI,uBAAuB;IACvB,iBAAiB;AACrB,C","file":"main.css","sourcesContent":["body {\n    background-color: azure;\n    color: blueviolet;\n}"],"sourceRoot":""}
