@@ -8,7 +8,7 @@ export const App = ()=>{
             </header>
             <article >
                 <div className="spacing">presentacion</div>
-                <div className="spacing">habilidades</div>
+                <div className="spacing">habilidades como desarrollador</div>
             </article>
             <section className="rounded spacing">
                 <h3>seccion 1</h3>
