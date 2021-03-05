@@ -4,12 +4,16 @@ export const App = ()=>{
     return (
         <div>
             <header>
-                <h2>portafolio</h2>
+                <h2>Portafolio</h2>
             </header>
-            <section className="bg-gray rounded">
+            <article >
+                <div className="spacing">presentacion</div>
+                <div className="spacing">habilidades</div>
+            </article>
+            <section className="rounded spacing">
                 <h3>seccion 1</h3>
             </section>
-            <section className="bg-gray rounded">
+            <section className="rounded spacing">
                 <h3>seccion 2</h3>
             </section>
         </div>

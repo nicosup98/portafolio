@@ -1,12 +1,14 @@
 const path = require("path")
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const htmlWebpackPlugin = require("html-webpack-plugin")
 const mode = process.env.MODE === "prod"? 'production':"development"
 module.exports = {
     entry:{
         main: "./src/index.js"
     },
     plugins:[
-        new MiniCssExtractPlugin()
+        new MiniCssExtractPlugin(),
+        new htmlWebpackPlugin({title:'portafolio',template:"./src/index.html"})
     ],
     output:{
         filename:"[name].bundle.js",

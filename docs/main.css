@@ -4,7 +4,8 @@ header{
     justify-content: flex-start;
     border: 2px solid #446f7a;
     padding: 10px;
-    background-image: linear-gradient(#537895,#09203f);
+    background-image: linear-gradient(#537895,#3b5b74);
+    box-shadow: 3px 5px 10px #09203f;
     color: lightblue;
     border-radius: 10px;
 }
@@ -12,20 +13,27 @@ header{
 section{
     display: flex;
     flex-direction: column;
-    margin: 20px;
-    margin-left: 10%;
-    margin-right: 10%;
-    padding: 20px;
-    border: 1px thin #b0bec5;
-    color: whitesmoke;
+    border: 1px thin #949da1;
+    background-color: whitesmoke;
+    color: darkgrey;
+    box-shadow: 1px 5px 5px lightgrey;
+}
+
+article{
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
 }
 
 .rounded{
     border-radius: 10px;
 }
 
-.bg-gray{
-    background-color: #78909c;
+.spacing{
+    margin: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 20px;
 }
 
 
