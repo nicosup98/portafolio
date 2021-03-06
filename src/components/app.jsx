@@ -1,18 +1,21 @@
 import React from "react"
 import "../styles/index.css"
+import "@fortawesome/fontawesome-free/js/all"
+
 export const App = ()=>{
     return (
         <div>
             <header>
-                <h2>Portafolio</h2>
+                <h1>Portafolio</h1>
+                <button className="boton-header"><i className="far fa-user"></i></button>
             </header>
             <section>
                 <article>
-                    <div className="spacing-art style-box">
+                    <div className="spacing-art style-box rounded">
                         <h3>Presentacion</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur atque adipisci blanditiis quae eos sed accusantium sunt asperiores delectus praesentium, porro eius amet possimus. Sapiente doloribus cupiditate voluptatum assumenda libero.</p>
                     </div>
-                    <div className="spacing-art style-box">
+                    <div className="spacing-art style-box rounded">
                         <h3>Habilidades</h3>
                         <div className="flex-column">
                             java
