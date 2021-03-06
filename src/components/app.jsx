@@ -6,15 +6,32 @@ export const App = ()=>{
             <header>
                 <h2>Portafolio</h2>
             </header>
-            <article >
-                <div className="spacing">presentacion</div>
-                <div className="spacing">habilidades como desarrollador</div>
-            </article>
-            <section className="rounded spacing">
-                <h3>seccion 1</h3>
+            <section>
+                <article>
+                    <div className="spacing-art style-box">
+                        <h3>Presentacion</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur atque adipisci blanditiis quae eos sed accusantium sunt asperiores delectus praesentium, porro eius amet possimus. Sapiente doloribus cupiditate voluptatum assumenda libero.</p>
+                    </div>
+                    <div className="spacing-art style-box">
+                        <h3>Habilidades</h3>
+                        <div className="flex-column">
+                            java
+                            <progress value="3" max="5">jav</progress>
+                        </div>
+                        <div className="flex-column">
+                            js
+                            <progress value="3" max="5">jav</progress>
+                        </div>
+                    </div>
+                </article>
             </section>
-            <section className="rounded spacing">
+            <section className="rounded spacing style-box">
+                <h3>seccion 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur iure sint aut praesentium unde, est vitae! Assumenda ea cum velit, recusandae, ducimus quo voluptatem saepe consequatur, aliquid eaque eveniet provident.</p>
+            </section>
+            <section className="rounded spacing style-box">
                 <h3>seccion 2</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A ut consectetur amet eius, saepe explicabo et dicta aliquam. Quidem blanditiis explicabo eius illo natus nemo minima placeat a aperiam doloribus.</p>
             </section>
         </div>
     )
