@@ -1,15 +1,19 @@
-import React from "react"
+import React, { useState } from "react"
+import { Modal } from "../modal/modal"
 import "../styles/index.css"
 import "@fortawesome/fontawesome-free/js/fontawesome.js"
 import "@fortawesome/fontawesome-free/js/regular"
 
 
-export const App = ()=>{
+export const App = () => {
+    const [showModal, setShowModal] = useState(false)
     return (
-        <div>
+        <>
             <header>
                 <h1>Portafolio</h1>
-                <button className="boton-header"><i className="far fa-user"></i></button>
+                <button className="boton-header" onClick={() => {
+                    setShowModal(true)
+                }}><i className="far fa-user"></i></button>
             </header>
             <section>
                 <article>
@@ -38,6 +42,18 @@ export const App = ()=>{
                 <h3>seccion 2</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A ut consectetur amet eius, saepe explicabo et dicta aliquam. Quidem blanditiis explicabo eius illo natus nemo minima placeat a aperiam doloribus.</p>
             </section>
-        </div>
+            {
+                showModal &&
+                <Modal>
+                    <div className="modal">
+                        <div className=" spacing-modal style-box">
+                            <h2>Contacto</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum ullam quaerat delectus, totam nihil iure distinctio iste laudantium eligendi! Amet aut ab incidunt natus magni consequuntur inventore numquam cupiditate voluptatem.</p>
+                            <button className="boton-modal" onClick={() => setShowModal(false)}>salir</button>
+                        </div>
+                    </div>
+                </Modal>
+            }
+        </>
     )
 }
