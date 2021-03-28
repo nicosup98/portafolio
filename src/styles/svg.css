@@ -1,0 +1,111 @@
+:root{
+  --steam-color:white;
+  
+  --cup-color:white;
+  
+  --java-stroke-width:2px;
+  
+  --go-color:white;
+  
+  --js-color:white;
+  
+  --ts-color:white;
+  
+  --crystal-color:white;
+}
+
+svg{
+  cursor:pointer;
+  width:25px;
+}
+.user_svg__user-icon {
+    width: 15px;
+    fill:white;
+    margin-top: 5px;
+}
+
+.java_color_svg__cup{
+  fill:var(--cup-color);
+  transition: all .5s ease;
+  stroke-width: var(--java-stroke-width);
+  stroke:black;
+}
+
+.java_color_svg__steam{
+  fill: var(--steam-color);
+  transition: all .5s ease;
+  stroke-width: var(--java-stroke-width);
+  stroke:black;
+}
+
+.java_color_svg__javaSvg{
+  transition: all .5s ease;
+}
+
+#java-bar:hover .java_color_svg__javaSvg{
+  transform: scale(1.05);
+  
+}
+#java-bar:hover .java_color_svg__javaSvg :is(.java_color_svg__cup,.java_color_svg__steam) {
+  stroke:none;
+}
+
+#java-bar:hover{
+    --steam-color:red;
+    --cup-color:darkblue;
+    
+}
+
+
+#goSvg{
+  fill: var(--go-color);
+  transition: all .5s ease;
+  stroke-width: .1px;
+  stroke:black;
+}
+#goSvg:hover{
+  --go-color: cyan;
+  transform: scale(1.05);
+  stroke:none;
+}
+
+.javascript_svg__jsSvg{
+  fill: var(--js-color);
+  transition: all .5s ease;
+  stroke-width: .15px;
+  stroke:black;
+}
+
+#js-bar:hover .javascript_svg__jsSvg{
+  transform: scale(1.05);
+  stroke:none;
+}
+
+#js-bar:hover{
+    --js-color: #eacf02;
+}
+
+#tsSvg{
+  fill: var(--ts-color);
+  transition: all .5s ease;
+  stroke-width: .15px;
+  stroke:black;
+}
+#tsSvg:hover{
+  --ts-color:#3178c6;
+  transform: scale(1.05);
+  stroke:none;
+}
+
+#crystalSvg {
+  fill:var(--crystal-color);
+  stroke: black ;
+  stroke-width: .1px;
+  transition: all .5s ease; 
+}
+
+#crystalSvg:hover {
+  --crystal-color: black;
+  stroke: none ;
+  transform: scale(1.05);
+}

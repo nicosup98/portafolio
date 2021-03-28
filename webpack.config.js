@@ -27,9 +27,13 @@ module.exports = {
                 exclude: "/node_modules/",
             },
             {
-                test: /\.(png|jpe?g|gif|svg|eot|ttf|woff|woff2)$/i,
+                test: /\.(png|jpe?g|gif|eot|ttf|woff|woff2)$/i,
                 // More information here https://webpack.js.org/guides/asset-modules/
                 use:["url-loader"]
+            },
+            {
+                test:/\.svg$/i,
+                use:["@svgr/webpack"]
             },
             {
                 test: /\.jsx?$/,

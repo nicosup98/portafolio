@@ -1,8 +1,10 @@
 import React, { useState } from "react"
 import { Modal } from "../modal/modal"
 import "../styles/index.css"
-import "@fortawesome/fontawesome-free/js/fontawesome.js"
-import "@fortawesome/fontawesome-free/js/regular"
+import "../styles/svg.css"
+import JavaSVG from "../assets/svgs/java_color.svg"
+import JsSVG from "../assets/svgs/javascript.svg"
+import UserSVG from "../assets/svgs/user.svg"
 
 
 export const App = () => {
@@ -13,7 +15,7 @@ export const App = () => {
                 <h1>Portafolio</h1>
                 <button className="boton-header" onClick={() => {
                     setShowModal(true)
-                }}><i className="far fa-user"></i></button>
+                }}><UserSVG/></button>
             </header>
             <section>
                 <article>
@@ -24,12 +26,16 @@ export const App = () => {
                     <div className="spacing-art style-box rounded">
                         <h3>Habilidades</h3>
                         <div className="flex-column">
-                            java
+                            <span id="java-bar">
+                               <JavaSVG />
                             <progress value="3" max="5">jav</progress>
+                            </span>
                         </div>
                         <div className="flex-column">
-                            js
-                            <progress value="3" max="5">jav</progress>
+                            <span id="js-bar">
+                                <JsSVG/>
+                                <progress value="3" max="5">jav</progress>
+                            </span>
                         </div>
                     </div>
                 </article>

@@ -1,5 +1,9 @@
 :root {
-    --box-shadow: lightgrey
+    --box-shadow: lightgrey;
+    --steam-dark:black;
+    --steam-color:red;
+    --cup-dark:black;
+    --cup-color:cyan;
 }
 
 header{
@@ -117,12 +121,20 @@ button{
     z-index: 999;
 }
 
+.steam{
+    fill: var(--steam-dark);
+}
+
+.cup{
+    fill: var(--cup-dark);
+}
+
 @media(max-width: 800px){
     article{
         display: flex;
         flex-direction: column;
     }
-    article > div{
+    article div{
     width: 77%;
 }
 }

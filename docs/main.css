@@ -1,3 +1,11 @@
+:root {
+    --box-shadow: lightgrey;
+    --steam-dark:black;
+    --steam-color:red;
+    --cup-dark:black;
+    --cup-color:cyan;
+}
+
 header{
     display: flex;
     flex-direction: row;
@@ -26,8 +34,9 @@ article > div{
 }
 
 button{
-    border-radius: 10px;
     padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 
@@ -41,9 +50,15 @@ button{
 }
 
 .spacing{
-    margin: 20px;
+    margin: 10px;
     margin-left: 10%;
     margin-right: 10%;
+    padding: 20px;
+}
+
+.spacing-modal{
+    margin-left: 15%;
+    margin-right: 15%;
     padding: 20px;
 }
 
@@ -64,12 +79,11 @@ button{
     border: 1px thin #949da1;
     background-color: whitesmoke;
     color: darkgrey;
-    box-shadow: 1px 5px 5px lightgrey;
+    box-shadow: 1px 5px 5px var(--box-shadow);
 }
 
 .boton-header{
     background-color: #598bb1;
-    padding: 6px;
     color: whitesmoke;
     height: fit-content;
     cursor: pointer;
@@ -79,16 +93,164 @@ button{
     border: none;
 }
 
+.boton-modal{
+    border: none;
+    outline: none;
+    color: darkgray;
+
+}
+.boton-modal:hover{
+    box-shadow: 0px 1px 5px rgba(40, 40, 40, 0.7);
+    transition: all .25s;
+}
+.modal{
+    --box-shadow: black;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#modal {
+    position: relative;
+    z-index: 999;
+}
+
+.steam{
+    fill: var(--steam-dark);
+}
+
+.cup{
+    fill: var(--cup-dark);
+}
+
 @media(max-width: 800px){
     article{
         display: flex;
         flex-direction: column;
     }
-    article > div{
+    article div{
     width: 77%;
 }
 }
 
+
+:root{
+  --steam-color:white;
+  
+  --cup-color:white;
+  
+  --java-stroke-width:2px;
+  
+  --go-color:white;
+  
+  --js-color:white;
+  
+  --ts-color:white;
+  
+  --crystal-color:white;
+}
+
+svg{
+  cursor:pointer;
+  width:25px;
+}
+.user_svg__user-icon {
+    width: 15px;
+    fill:white;
+    margin-top: 5px;
+}
+
+.java_color_svg__cup{
+  fill:var(--cup-color);
+  transition: all .5s ease;
+  stroke-width: var(--java-stroke-width);
+  stroke:black;
+}
+
+.java_color_svg__steam{
+  fill: var(--steam-color);
+  transition: all .5s ease;
+  stroke-width: var(--java-stroke-width);
+  stroke:black;
+}
+
+.java_color_svg__javaSvg{
+  transition: all .5s ease;
+}
+
+#java-bar:hover .java_color_svg__javaSvg{
+  transform: scale(1.05);
+  
+}
+#java-bar:hover .java_color_svg__javaSvg :is(.java_color_svg__cup,.java_color_svg__steam) {
+  stroke:none;
+}
+
+#java-bar:hover{
+    --steam-color:red;
+    --cup-color:darkblue;
+    
+}
+
+
+#goSvg{
+  fill: var(--go-color);
+  transition: all .5s ease;
+  stroke-width: .1px;
+  stroke:black;
+}
+#goSvg:hover{
+  --go-color: cyan;
+  transform: scale(1.05);
+  stroke:none;
+}
+
+.javascript_svg__jsSvg{
+  fill: var(--js-color);
+  transition: all .5s ease;
+  stroke-width: .15px;
+  stroke:black;
+}
+
+#js-bar:hover .javascript_svg__jsSvg{
+  transform: scale(1.05);
+  stroke:none;
+}
+
+#js-bar:hover{
+    --js-color: #eacf02;
+}
+
+#tsSvg{
+  fill: var(--ts-color);
+  transition: all .5s ease;
+  stroke-width: .15px;
+  stroke:black;
+}
+#tsSvg:hover{
+  --ts-color:#3178c6;
+  transform: scale(1.05);
+  stroke:none;
+}
+
+#crystalSvg {
+  fill:var(--crystal-color);
+  stroke: black ;
+  stroke-width: .1px;
+  transition: all .5s ease; 
+}
+
+#crystalSvg:hover {
+  --crystal-color: black;
+  stroke: none ;
+  transform: scale(1.05);
+}
 
 
 /*# sourceMappingURL=main.css.map*/
